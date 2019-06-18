@@ -1,0 +1,19 @@
+Scene: background image 
+
+object: position
+    Sprite: position + sprite
+        AnimatedSprite: position + sprite/animation
+
+    Zone: Position + area. (Used to trigger shit when inside area)
+        drawnZone: Position + area + sprite. (Bushes and stones, can trigger events when inside)
+            animatedZone: position + area + sprite with anination
+    
+    Obscticle: Position + collision
+        VisableObsticle: Position + collision + sprite
+            AnimatedObsticle: Position + collision + sprite/animation
+                PhysicalObject: Position + collision + sprite/animation + physics //Usikker om vi trenger enda et nivå for å lage player
+
+
+
+
+    
