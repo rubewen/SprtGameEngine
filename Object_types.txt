@@ -1,6 +1,6 @@
 Scene: background image 
 
-object: position
+Object: position
     Sprite: position + sprite
         AnimatedSprite: position + sprite/animation
 
