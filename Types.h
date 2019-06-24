@@ -2,7 +2,7 @@
 
 #include <iostream>
 
-typedef struct Vector2f {
+struct Vector2f {
     float x, y;
 };
 
