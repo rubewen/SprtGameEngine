@@ -7,12 +7,11 @@ class Component;
 
 class Entity {
     std::vector<Component> components;
+    EntityId id;
 
 public:
-    EntityId id;
     
-    Entity(EntityId id) {
-        this->id = id;
+    Entity(EntityId id) : id(id) {
         std::cout << "Entity with id " << id << " created." << std::endl;
     };
 
@@ -20,6 +19,10 @@ public:
     //     this->id = id;
     //     this->components.emplace_back(components);
     // };
+
+    EntityId GetId() {
+        return id;
+    }
 
     void AddComponent(Component component);
 

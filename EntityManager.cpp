@@ -1,5 +1,7 @@
 #include "EntityManager.h"
 
+EntityId EntityManager::entityId = 5;
+
 EntityManager::EntityManager() {
     std::cout << "EntityManager Created" << std::endl;
 }

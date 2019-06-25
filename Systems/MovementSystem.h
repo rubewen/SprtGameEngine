@@ -3,12 +3,12 @@
 #include <vector>
 #include "System.h"
 #include "../Components/TransformComponent.h"
-#include "../Components/RenderComponent.h"
+#include "../Components/PhysicsComponent.h"
 
-class MovementSystem : System<TransformComponent, RenderComponent> {
+class MovementSystem : System<TransformComponent, PhysicsComponent> {
 
 public:
     MovementSystem();
 
-    void Update() override;
+    void Update();
 };

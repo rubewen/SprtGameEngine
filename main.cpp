@@ -8,8 +8,6 @@
     RenderSystem vil da lagre referanse til disse to KOMPONENTENE i sin liste over komponenter den styrer
 */
 
-EntityId EntityManager::entityId = 0;
-
 int main() {
     EntityManager entityManager;
 
@@ -18,10 +16,10 @@ int main() {
     Entity entity3 = entityManager.CreateEntity();
 
     std::cout << "Entity 1 id: " << std::endl;
-    std::cout << entity1.id << std::endl;
+    std::cout << entity1.GetId() << std::endl;
     std::cout << "Entity 2 id: " << std::endl;
-    std::cout << entity2.id << std::endl;
+    std::cout << entity2.GetId() << std::endl;
     std::cout << "Entity 3 id: " << std::endl;
-    std::cout << entity3.id << std::endl;
+    std::cout << entity3.GetId() << std::endl;
     system("pause");
 };
