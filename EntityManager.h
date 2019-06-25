@@ -11,13 +11,13 @@
 
 class EntityManager {
 private:
-    static EntityId entityId;
-
     std::vector<Entity> entities;
     std::vector<Component> components;
     std::vector<BaseSystem> systems;
 
 public:
+    static EntityId entityId;
+
     EntityManager();
 
     void Update();

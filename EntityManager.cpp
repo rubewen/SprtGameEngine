@@ -13,7 +13,7 @@ void EntityManager::Update() {
 Entity EntityManager::CreateEntity() {
     Entity entity(EntityManager::entityId);
     // entities.emplace_back(entity);
-    // entityId++;
+    entityId++;
     return entity;
 }
 
