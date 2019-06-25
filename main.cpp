@@ -9,6 +9,17 @@
 */
 
 int main() {
-    std::cout << "Hello" << std::endl;
+    EntityManager entityManager;
+
+    Entity entity1 = entityManager.CreateEntity();
+    Entity entity2 = entityManager.CreateEntity();
+    Entity entity3 = entityManager.CreateEntity();
+
+    std::cout << "Entity 1 id: " << std::endl;
+    // std::cout << entity1.id << std::endl;
+    std::cout << "Entity 2 id: " << std::endl;
+    // std::cout << entity2.id << std::endl;
+    std::cout << "Entity 3 id: " << std::endl;
+    // std::cout << entity3.id << std::endl;
     system("pause");
 };

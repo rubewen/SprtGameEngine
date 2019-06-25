@@ -1,19 +1,17 @@
 #pragma once
 
-class Entity;
+#include "../Entities/Entity.h"
 
 class Component {
 protected:
-    Entity* entity;
+    Entity entity;
 
 
 public:
-    void Enable() {
-        
-    };
+    Component();
 
-    void Disable() {
+    void Enable();
 
-    }
+    void Disable();
 
 };

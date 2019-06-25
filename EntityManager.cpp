@@ -1,23 +1,22 @@
 #include "EntityManager.h"
 
-
 EntityManager::EntityManager() {
-    
+    std::cout << "EntityManager Created" << std::endl;
 }
 
 void EntityManager::Update() {
-    for (System* system : systems) {
-        system->Update();
-    };
-        
-        
+    // for (BaseSystem system : systems) {
+    //     system.Update();
+    // };
 }
 
-EntityId EntityManager::CreateEntity() {
-    entities.emplace(Entity(entityId));
-    entityId++;
+Entity EntityManager::CreateEntity() {
+    Entity entity(EntityManager::entityId);
+    // entities.emplace_back(entity);
+    // entityId++;
+    return entity;
 }
 
 void EntityManager::DestroyEntity(EntityId entityId) {
-    entities.erase(entityId);
+    // entities.erase(entityId);
 }

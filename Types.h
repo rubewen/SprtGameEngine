@@ -6,4 +6,4 @@ struct Vector2f {
     float x, y;
 };
 
-typedef std::size_t EntityId;
+typedef unsigned int EntityId;

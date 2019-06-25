@@ -2,25 +2,27 @@
 #pragma once
 #include <iostream>
 #include <vector>
-
-#include "Entities/Entity.h"
+#include "Types.h"
 #include "Components/Component.h"
-#include "Systems/System.h"
+#include "Systems/BaseSystem.h"
+#include "Entities/Entity.h"
+#include "Types.h"
+
 
 class EntityManager {
 private:
     static EntityId entityId;
 
-    std::vector<Entity*> entities;
-    std::vector<Component*> components;
-    // std::vector<System*> systems;
+    std::vector<Entity> entities;
+    std::vector<Component> components;
+    std::vector<BaseSystem> systems;
 
 public:
     EntityManager();
 
     void Update();
 
-    EntityId CreateEntity();
+    Entity CreateEntity();
 
     void DestroyEntity(EntityId entityId);
 };
