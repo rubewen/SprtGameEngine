@@ -1,7 +1,5 @@
 #include "EntityManager.h"
 
-EntityId EntityManager::entityId = 5;
-
 EntityManager::EntityManager() {
     std::cout << "EntityManager Created" << std::endl;
 }
@@ -13,8 +11,8 @@ void EntityManager::Update() {
 }
 
 Entity EntityManager::CreateEntity() {
-    Entity entity(EntityManager::entityId);
-    // entities.emplace_back(entity);
+    Entity entity(entityId);
+    entities.push_back(entity);
     entityId++;
     return entity;
 }

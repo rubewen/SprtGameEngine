@@ -11,7 +11,7 @@ class Entity {
 
 public:
     
-    Entity(EntityId id) : id(id) {
+    Entity(EntityId& id) : id(id) {
         std::cout << "Entity with id " << id << " created." << std::endl;
     };
 
@@ -20,7 +20,7 @@ public:
     //     this->components.emplace_back(components);
     // };
 
-    EntityId GetId() {
+    EntityId GetId() const {
         return id;
     }
 
