@@ -2,11 +2,10 @@
 #pragma once
 #include <iostream>
 #include <vector>
-#include "Types.h"
 #include "Components/Component.h"
 #include "Systems/BaseSystem.h"
 #include "Entities/Entity.h"
-#include "Types.h"
+#include "../Types.h"
 
 
 class EntityManager {

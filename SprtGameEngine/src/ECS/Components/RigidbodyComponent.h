@@ -2,7 +2,7 @@
 
 #include "Component.h"
 
-class PhysicsComponent : Component {
+class RigidbodyComponent : Component {
 public:
     float mass;
 };
